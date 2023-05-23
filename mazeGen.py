@@ -1,8 +1,9 @@
 import pygame
+
 from random import choice
 
 # Constants
-RES = WIDTH, HEIGHT = 1302, 702
+RES = WIDTH, HEIGHT = 1352, 752
 W = 25
 COLS = WIDTH // W
 ROWS = HEIGHT // W
@@ -207,6 +208,7 @@ while run:
                 startCell = gridCells[findIndex(row, col)]
                 startCell.makeStart()
                 startCell.visitedFromPathfinding = True
+                print("starting cell placed")
                 queue.append(startCell)
 
             elif done and not end and getClickPos(pygame.mouse.get_pos()) != getClickPos(start):
@@ -214,6 +216,7 @@ while run:
                 row, col = getClickPos(end)
                 endCell = gridCells[findIndex(row, col)]
                 endCell.makeEnd()
+                print("target cell placed")
                 beginPathfinding = True
 
     if not selectedPt:
@@ -236,8 +239,9 @@ while run:
             currentCell.visitedFromPathfinding = True
             if currentCell == endCell:
                 searching = False
-                print("end found")
+                print("target cell found")
                 while currentCell.prior != startCell:
+                
                     path.append(currentCell.prior)
                     currentCell = currentCell.prior
             else:
@@ -271,7 +275,7 @@ while run:
     else:
         done = True
         print("Done")
-    clock.tick(100)
+    # clock.tick(100)
 
 
 pygame.quit()
