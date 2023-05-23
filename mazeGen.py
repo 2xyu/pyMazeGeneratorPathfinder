@@ -241,13 +241,12 @@ while run:
                 searching = False
                 print("target cell found")
                 while currentCell.prior != startCell:
-                
                     path.append(currentCell.prior)
                     currentCell = currentCell.prior
             else:
 
                 for i in range(len(currentCell.neighbors)):
-                    
+
                     dx = currentCell.x - currentCell.neighbors[i].x
                     dy = currentCell.y - currentCell.neighbors[i].y
 
@@ -276,6 +275,5 @@ while run:
         done = True
         print("Done")
     # clock.tick(100)
-
 
 pygame.quit()

@@ -4,4 +4,6 @@ requires pygame
 
 first click on a cell to start the maze generator.
 
-Then after its done generating, click a starting cell then a target cell to begin the path finding
+Then after its done generating, click a starting cell then a target cell to begin the path finding.
+
+Demo at https://replit.com/@VietHoang41/mazeGenPath?v=1
