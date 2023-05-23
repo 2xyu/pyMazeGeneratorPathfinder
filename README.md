@@ -1,4 +1,4 @@
-# pyMazeGeneratorSolver
+# Python Maze Generator and Pathfinder
 python program that uses DFS to generate and solve a maze
 requires pygame
 
