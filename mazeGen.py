@@ -19,6 +19,7 @@ BLUE = pygame.Color('blue')
 GREY = pygame.Color('grey')
 DARK_ORANGE = pygame.Color('darkorange')
 
+
 pygame.init()
 sc = pygame.display.set_mode(RES)
 clock = pygame.time.Clock()
