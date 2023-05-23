@@ -1,6 +1,6 @@
 # Python Maze Generator and Pathfinder
 python program that uses DFS to generate and solve a maze
-requires pygame
+Running .py file requires pygame. The .exe can be ran normally
 
 first click on a cell to start the maze generator.
 
