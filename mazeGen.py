@@ -276,5 +276,3 @@ while run:
         done = True
         print("Done")
     # clock.tick(100)
-
-pygame.quit()
